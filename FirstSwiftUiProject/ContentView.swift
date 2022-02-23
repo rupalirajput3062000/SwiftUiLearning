@@ -32,11 +32,11 @@ struct ContentView: View {
                 Spacer()
                 
                 HStack {
-                    Image(systemName: "heart.fill").foregroundColor(Color.red).font(.largeTitle)
+                    ImageView(imageColor:Color.red)
                     Spacer()
-                    Image(systemName: "heart.fill").foregroundColor(Color.blue).font(.largeTitle)
+                    ImageView(imageColor:Color.blue)
                     Spacer()
-                    Image(systemName: "heart.fill").foregroundColor(Color.green).font(.largeTitle)
+                    ImageView(imageColor:Color.green)
                 }
                 
             }
@@ -52,3 +52,10 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 
+
+struct ImageView: View {
+    var imageColor:Color
+    var body: some View {
+        Image(systemName: "heart.fill").foregroundColor(imageColor).font(.largeTitle).padding()
+    }
+}
