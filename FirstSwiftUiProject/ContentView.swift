@@ -29,6 +29,15 @@ struct ContentView: View {
                 
                 InfoView(imageName: "phone.fill", text: "123-456-789")
                 InfoView(imageName: "envelope.fill", text: "rurajput@gmail.com")
+                Spacer()
+                
+                HStack {
+                    Image(systemName: "heart.fill").foregroundColor(Color.red).font(.largeTitle)
+                    Spacer()
+                    Image(systemName: "heart.fill").foregroundColor(Color.blue).font(.largeTitle)
+                    Spacer()
+                    Image(systemName: "heart.fill").foregroundColor(Color.green).font(.largeTitle)
+                }
                 
             }
         }
