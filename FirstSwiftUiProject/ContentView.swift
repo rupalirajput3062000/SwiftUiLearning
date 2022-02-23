@@ -29,6 +29,9 @@ struct ContentView: View {
                 
                 InfoView(imageName: "phone.fill", text: "123-456-789")
                 InfoView(imageName: "envelope.fill", text: "rurajput@gmail.com")
+                Spacer()
+                
+                Image(systemName: "heart.fill").foregroundColor(Color.pink).font(.largeTitle)
                 
             }
         }
